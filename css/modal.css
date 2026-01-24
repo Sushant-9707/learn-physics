@@ -1,0 +1,59 @@
+/* MODAL OVERLAY */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.6);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+/* HIDDEN STATE */
+.modal.hidden {
+  display: none;
+}
+
+/* MODAL BOX */
+.modal-content {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 90%;
+  max-height: 80vh;
+  padding: 32px;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+}
+
+/* CLOSE BUTTON */
+.close-modal {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  color: #38bdf8;
+}
+
+/* MODAL CONTENT TEXT */
+.modal-body h3 {
+  color: #38bdf8;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.modal-body p {
+  color: #cbd5f5;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 05 – Newton’s Laws of Motion</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="../index.html" class="logo">Learn Physics</a>
+  </header>
+
+  <!-- PAGE LAYOUT -->
+  <div class="page">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h3>Journey</h3>
+      <ul>
+        <li><a href="step01.html">01. Units & Measurements</a></li>
+        <li><a href="step02.html">02. Scalars & Vectors</a></li>
+        <li><a href="step03.html">03. Motion in 1D</a></li>
+        <li><a href="step04.html">04. Motion in 2D & 3D</a></li>
+        <li class="active"><a href="step05.html">05. Newton’s Laws</a></li>
+        <li><a href="step06.html">06. Applications of Newton’s Laws</a></li>
+      </ul>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="content">
+      <span class="step-label">STEP 05</span>
+      <h1>Newton’s Laws of Motion</h1>
+
+      <p class="summary">
+        Newton’s laws form the foundation of classical mechanics. They describe how
+        forces affect the motion of objects and explain why objects move the way they do.
+      </p>
+
+      <h2>Core Ideas</h2>
+
+      <ul class="subtopics">
+        <li><button data-topic="first-law">First Law of Motion (Inertia)</button></li>
+        <li><button data-topic="second-law">Second Law of Motion</button></li>
+        <li><button data-topic="third-law">Third Law of Motion</button></li>
+        <li><button data-topic="inertial-frames">Inertial Frames of Reference</button></li>
+      </ul>
+    </main>
+
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal hidden" id="modal">
+    <div class="modal-content">
+      <button class="close-modal">×</button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- HIDDEN SUBTOPIC CONTENT -->
+  <section class="hidden-content">
+
+    <div id="first-law">
+      <h3>First Law of Motion (Law of Inertia)</h3>
+      <p>
+        An object remains at rest or continues to move with constant velocity unless
+        acted upon by an external unbalanced force.
+      </p>
+      <p>
+        This law introduces the concept of inertia, the resistance of an object to
+        changes in its state of motion.
+      </p>
+    </div>
+
+    <div id="second-law">
+      <h3>Second Law of Motion</h3>
+      <p>
+        The rate of change of momentum of an object is directly proportional to the
+        applied force and occurs in the direction of the force.
+      </p>
+      <p>
+        For constant mass, this law is commonly written as F = ma, linking force,
+        mass, and acceleration.
+      </p>
+    </div>
+
+    <div id="third-law">
+      <h3>Third Law of Motion</h3>
+      <p>
+        For every action, there is an equal and opposite reaction.
+      </p>
+      <p>
+        These action–reaction force pairs act on different objects and are always
+        equal in magnitude and opposite in direction.
+      </p>
+    </div>
+
+    <div id="inertial-frames">
+      <h3>Inertial Frames of Reference</h3>
+      <p>
+        An inertial frame of reference is one in which Newton’s laws hold true
+        without modification.
+      </p>
+      <p>
+        Frames moving with constant velocity relative to an inertial frame are
+        also inertial frames.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- JS -->
+  <script src="../js/global.js"></script>
+  <script src="../js/modal.js"></script>
+
+</body>
+</html>

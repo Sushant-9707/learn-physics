@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(circle at top, #020617, #00010a);
+  font-family: system-ui, sans-serif;
+  color: #e5e7eb;
+  overflow: hidden;
+}
+
+/* HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 32px;
+  z-index: 10;
+}
+
+.logo {
+  color: #38bdf8;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* FLOATING BACKGROUND */
+.floating-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.floating-bg span {
+  position: absolute;
+  color: rgba(56, 189, 248, 0.35);
+  font-size: 40px;
+  animation: float 22s linear infinite;
+}
+
+.floating-bg span:nth-child(1) { top: 20%; left: 10%; }
+.floating-bg span:nth-child(2) { top: 60%; left: 15%; }
+.floating-bg span:nth-child(3) { top: 30%; left: 70%; }
+.floating-bg span:nth-child(4) { top: 70%; left: 80%; }
+.floating-bg span:nth-child(5) { top: 50%; left: 50%; }
+.floating-bg span:nth-child(6) { top: 15%; left: 85%; }
+
+@keyframes float {
+  0% { transform: translateY(0); opacity: 0.15; }
+  50% { opacity: 0.4; }
+  100% { transform: translateY(-200px); opacity: 0.1; }
+}
+
+/* HERO CONTENT */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  color: #38bdf8;
+  letter-spacing: 1px;
+}
+
+.hero-content p {
+  margin-top: 16px;
+  font-size: 18px;
+  color: #94a3b8;
+}
+
+/* CTA BUTTON */
+.start-btn {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 14px 36px;
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #2563eb, #38bdf8);
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.start-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 50px rgba(56, 189, 248, 0.7);
+}

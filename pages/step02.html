@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 02 – Scalars & Vectors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="../index.html" class="logo">Learn Physics</a>
+  </header>
+
+  <!-- PAGE LAYOUT -->
+  <div class="page">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h3>Journey</h3>
+      <ul>
+        <li><a href="step01.html">01. Units & Measurements</a></li>
+        <li class="active"><a href="step02.html">02. Scalars & Vectors</a></li>
+        <li><a href="step03.html">03. Motion in 1D</a></li>
+        <li><a href="step04.html">04. Motion in 2D & 3D</a></li>
+      </ul>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="content">
+      <span class="step-label">STEP 02</span>
+      <h1>Scalars & Vectors</h1>
+
+      <p class="summary">
+        Physical quantities describe the world, but not all quantities behave the same.
+        Some require only magnitude, while others demand both magnitude and direction.
+      </p>
+
+      <h2>Core Ideas</h2>
+
+      <ul class="subtopics">
+        <li><button data-topic="scalar-quantities">Scalar Quantities</button></li>
+        <li><button data-topic="vector-quantities">Vector Quantities</button></li>
+        <li><button data-topic="vector-representation">Representation of Vectors</button></li>
+        <li><button data-topic="vector-addition">Addition of Vectors</button></li>
+      </ul>
+    </main>
+
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal hidden" id="modal">
+    <div class="modal-content">
+      <button class="close-modal">×</button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- HIDDEN SUBTOPIC CONTENT -->
+  <section class="hidden-content">
+
+    <div id="scalar-quantities">
+      <h3>Scalar Quantities</h3>
+      <p>
+        Scalar quantities are described completely by magnitude alone.
+        Examples include mass, time, temperature, energy, and speed.
+      </p>
+      <p>
+        Scalars can be added or subtracted using ordinary algebra without
+        considering direction.
+      </p>
+    </div>
+
+    <div id="vector-quantities">
+      <h3>Vector Quantities</h3>
+      <p>
+        Vector quantities require both magnitude and direction for complete
+        description. Examples include displacement, velocity, acceleration, and force.
+      </p>
+      <p>
+        Changing the direction of a vector changes the physical meaning,
+        even if magnitude remains the same.
+      </p>
+    </div>
+
+    <div id="vector-representation">
+      <h3>Representation of Vectors</h3>
+      <p>
+        Vectors are commonly represented by arrows. The length of the arrow
+        represents magnitude, while the arrowhead indicates direction.
+      </p>
+      <p>
+        Vectors can also be represented using components along coordinate axes.
+      </p>
+    </div>
+
+    <div id="vector-addition">
+      <h3>Addition of Vectors</h3>
+      <p>
+        Vectors are added using geometric methods such as the head-to-tail method
+        or parallelogram law.
+      </p>
+      <p>
+        Algebraic addition using components is often more efficient for calculations.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- JS -->
+  <script src="../js/global.js"></script>
+  <script src="../js/modal.js"></script>
+
+</body>
+</html>
