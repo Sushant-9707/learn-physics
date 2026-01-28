@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 28 – Wave Optics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="../index.html" class="logo">Learn Physics</a>
+</header>
+
+<div class="page">
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Journey</h3>
+      <button id="toggle-sidebar">☰</button>
+    </div>
+    <ul id="sidebar-list"></ul>
+  </aside>
+
+  <main class="content">
+    <span class="step-label">STEP 28</span>
+    <h1>Wave Optics</h1>
+
+    <p class="summary">
+      Wave optics studies light as a wave phenomenon rather than a collection of rays.
+      It explains effects that geometrical optics cannot, such as interference,
+      diffraction, and polarization. These phenomena reveal that light spreads,
+      overlaps, and interacts with itself in ways only waves can.
+    </p>
+
+    <h2>Core Ideas</h2>
+
+    <ul class="subtopics">
+      <li><button data-topic="limits-ray">Limits of Geometrical Optics</button></li>
+      <li><button data-topic="huygens">Huygens’ Principle</button></li>
+      <li><button data-topic="interference">Interference of Light</button></li>
+      <li><button data-topic="young">Young’s Double Slit Experiment</button></li>
+      <li><button data-topic="diffraction">Diffraction of Light</button></li>
+      <li><button data-topic="single-slit">Single Slit Diffraction</button></li>
+      <li><button data-topic="polarization">Polarization</button></li>
+      <li><button data-topic="coherence">Coherence of Light</button></li>
+    </ul>
+  </main>
+
+</div>
+
+<div class="modal hidden" id="modal">
+  <div class="modal-content">
+    <button class="close-modal">×</button>
+    <div class="modal-body"></div>
+  </div>
+</div>
+
+<section class="hidden-content">
+
+  <div id="limits-ray">
+    <h3>Limits of Geometrical Optics</h3>
+    <p>
+      Geometrical optics treats light as straight-line rays and works well
+      when objects are much larger than the wavelength of light.
+      However, it completely fails to explain why light bends around edges
+      or produces patterns when passing through narrow openings.
+    </p>
+    <p>
+      These failures force us to abandon the ray model and accept
+      that light behaves as a wave under many circumstances.
+    </p>
+  </div>
+
+  <div id="huygens">
+    <h3>Huygens’ Principle</h3>
+    <p>
+      Huygens’ principle states that every point on a wavefront acts as a source
+      of secondary wavelets, and the new wavefront is the envelope of these wavelets.
+    </p>
+    <p>
+      This idea provides a powerful way to understand reflection, refraction,
+      and diffraction without relying on ray assumptions.
+    </p>
+  </div>
+
+  <div id="interference">
+    <h3>Interference of Light</h3>
+    <p>
+      Interference occurs when two or more light waves overlap
+      and combine according to the principle of superposition.
+      Depending on their relative phase, the waves can reinforce
+      or cancel each other.
+    </p>
+    <p>
+      This leads to alternating bright and dark regions,
+      proving that light has a wave nature.
+    </p>
+  </div>
+
+  <div id="young">
+    <h3>Young’s Double Slit Experiment</h3>
+    <p>
+      Young’s experiment demonstrated interference by passing light
+      through two closely spaced slits.
+      The resulting pattern of bright and dark fringes
+      cannot be explained by particle or ray models.
+    </p>
+    <p>
+      This experiment is one of the strongest classical proofs
+      that light behaves as a wave.
+    </p>
+  </div>
+
+  <div id="diffraction">
+    <h3>Diffraction of Light</h3>
+    <p>
+      Diffraction is the bending and spreading of light
+      when it passes through a narrow opening or around an obstacle.
+      It becomes significant when the size of the opening
+      is comparable to the wavelength of light.
+    </p>
+    <p>
+      Diffraction shows that light does not travel strictly in straight lines.
+    </p>
+  </div>
+
+  <div id="single-slit">
+    <h3>Single Slit Diffraction</h3>
+    <p>
+      In single slit diffraction, light spreads out after passing through a narrow slit,
+      producing a central bright maximum surrounded by weaker fringes.
+      The pattern arises from interference between wavelets across the slit.
+    </p>
+    <p>
+      This phenomenon sets a fundamental limit on optical resolution.
+    </p>
+  </div>
+
+  <div id="polarization">
+    <h3>Polarization</h3>
+    <p>
+      Polarization refers to restricting the direction of oscillation
+      of the electric field in a light wave.
+      Only transverse waves can be polarized.
+    </p>
+    <p>
+      The existence of polarization confirms that light is a transverse wave.
+    </p>
+  </div>
+
+  <div id="coherence">
+    <h3>Coherence of Light</h3>
+    <p>
+      Coherence describes the ability of light waves to produce stable interference patterns.
+      For sustained interference, the waves must maintain a constant phase difference.
+    </p>
+    <p>
+      Lasers are highly coherent sources, which is why they are central to wave optics experiments.
+    </p>
+  </div>
+
+</section>
+
+<script src="../js/global.js"></script>
+<script src="../js/modal.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 32 – Nuclear Physics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="../index.html" class="logo">Learn Physics</a>
+</header>
+
+<div class="page">
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Journey</h3>
+      <button id="toggle-sidebar">☰</button>
+    </div>
+    <ul id="sidebar-list"></ul>
+  </aside>
+
+  <main class="content">
+    <span class="step-label">STEP 32</span>
+    <h1>Nuclear Physics</h1>
+
+    <p class="summary">
+      Nuclear physics deals with the core of atoms, where almost all mass lives and
+      where energies are millions of times larger than chemical reactions.
+      This is the physics of binding, decay, radiation, and reactions that power stars
+      and threaten civilizations.
+    </p>
+
+    <h2>Core Ideas</h2>
+
+    <ul class="subtopics">
+      <li><button data-topic="nucleus">Structure of the Nucleus</button></li>
+      <li><button data-topic="binding">Nuclear Binding Energy</button></li>
+      <li><button data-topic="radioactivity">Radioactivity</button></li>
+      <li><button data-topic="decay-law">Radioactive Decay Law</button></li>
+      <li><button data-topic="fission">Nuclear Fission</button></li>
+      <li><button data-topic="fusion">Nuclear Fusion</button></li>
+      <li><button data-topic="applications">Applications of Nuclear Physics</button></li>
+    </ul>
+  </main>
+
+</div>
+
+<div class="modal hidden" id="modal">
+  <div class="modal-content">
+    <button class="close-modal">×</button>
+    <div class="modal-body"></div>
+  </div>
+</div>
+
+<section class="hidden-content">
+
+<div id="nucleus">
+  <h3>Structure of the Nucleus</h3>
+  <p>
+    At the center of every atom lies the nucleus, an extremely small but incredibly dense
+    region containing protons and neutrons. Almost the entire mass of an atom is packed
+    into this tiny volume, while electrons occupy a comparatively vast empty space around it.
+  </p>
+  <p>
+    Protons carry positive charge, while neutrons are electrically neutral.
+    The number of protons defines the element, while the number of neutrons can vary,
+    creating isotopes of the same element. Despite the strong repulsion between positively
+    charged protons, the nucleus remains stable.
+  </p>
+  <p>
+    This stability is due to the strong nuclear force, a powerful but short-range force
+    that acts between nucleons. It completely overpowers electromagnetic repulsion at very
+    small distances, effectively gluing the nucleus together.
+  </p>
+</div>
+
+<div id="binding">
+  <h3>Nuclear Binding Energy</h3>
+  <p>
+    Nuclear binding energy is the energy required to completely separate a nucleus
+    into its individual protons and neutrons. It is a direct measure of how tightly
+    the nucleus is held together.
+  </p>
+  <p>
+    When nucleons bind together, the total mass of the nucleus is slightly less than
+    the sum of the masses of the free protons and neutrons. This missing mass is called
+    mass defect and is converted into energy according to E = mc².
+  </p>
+  <p>
+    Binding energy per nucleon explains nuclear stability. Medium-mass nuclei like iron
+    are the most stable, while very light and very heavy nuclei can release energy
+    through fusion or fission respectively.
+  </p>
+</div>
+
+<div id="radioactivity">
+  <h3>Radioactivity</h3>
+  <p>
+    Radioactivity is the spontaneous emission of particles or radiation from unstable nuclei.
+    These nuclei transform into more stable configurations by releasing excess energy.
+  </p>
+  <p>
+    There are three main types of radioactive emissions: alpha particles, beta particles,
+    and gamma rays. Alpha particles are helium nuclei, beta particles are fast electrons
+    or positrons, and gamma rays are high-energy photons.
+  </p>
+  <p>
+    Radioactive decay is random at the level of individual atoms, but predictable
+    statistically for large numbers of nuclei. This randomness is a fundamental feature
+    of quantum mechanics.
+  </p>
+</div>
+
+<div id="decay-law">
+  <h3>Radioactive Decay Law</h3>
+  <p>
+    The radioactive decay law states that the rate at which nuclei decay is proportional
+    to the number of undecayed nuclei present. This leads to an exponential decrease
+    over time.
+  </p>
+  <p>
+    A key concept is half-life, the time required for half of the radioactive nuclei
+    in a sample to decay. Each isotope has a characteristic half-life that cannot be
+    altered by physical or chemical conditions.
+  </p>
+  <p>
+    Half-life allows radioactive materials to be used as clocks in archaeology,
+    geology, and medicine, providing insight into processes that occur over vast timescales.
+  </p>
+</div>
+
+<div id="fission">
+  <h3>Nuclear Fission</h3>
+  <p>
+    Nuclear fission occurs when a heavy nucleus splits into two lighter nuclei,
+    releasing a large amount of energy. This happens because the products have
+    higher binding energy per nucleon than the original nucleus.
+  </p>
+  <p>
+    Fission can be spontaneous or induced by neutron absorption. In induced fission,
+    additional neutrons are released, which can trigger further fission events,
+    leading to a chain reaction.
+  </p>
+  <p>
+    Controlled chain reactions power nuclear reactors, while uncontrolled reactions
+    form the basis of nuclear weapons. The same physics, vastly different outcomes.
+  </p>
+</div>
+
+<div id="fusion">
+  <h3>Nuclear Fusion</h3>
+  <p>
+    Nuclear fusion involves combining light nuclei to form a heavier nucleus.
+    This process releases energy because the resulting nucleus has greater
+    binding energy per nucleon.
+  </p>
+  <p>
+    Fusion requires extremely high temperatures and pressures to overcome
+    electrostatic repulsion between nuclei. These conditions naturally exist
+    in stars, where fusion powers stellar radiation.
+  </p>
+  <p>
+    Fusion is considered a potential future energy source because it produces
+    enormous energy with minimal long-lived radioactive waste, though achieving
+    controlled fusion on Earth remains a major challenge.
+  </p>
+</div>
+
+<div id="applications">
+  <h3>Applications of Nuclear Physics</h3>
+  <p>
+    Nuclear physics has applications far beyond power generation and weapons.
+    In medicine, radioactive isotopes are used for imaging and cancer treatment.
+  </p>
+  <p>
+    In industry, radiation helps inspect materials and measure thickness with
+    high precision. In science, nuclear techniques reveal the age of ancient
+    artifacts and geological formations.
+  </p>
+  <p>
+    Despite its risks, nuclear physics remains one of the most impactful
+    fields in understanding energy, matter, and the evolution of the universe.
+  </p>
+</div>
+
+</section>
+
+<script src="../js/global.js"></script>
+<script src="../js/modal.js"></script>
+
+</body>
+</html>

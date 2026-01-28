@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 11 – Rotational Kinematics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="../index.html" class="logo">Learn Physics</a>
+</header>
+
+<div class="page">
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Journey</h3>
+      <button id="toggle-sidebar">☰</button>
+    </div>
+    <ul id="sidebar-list"></ul>
+  </aside>
+
+  <main class="content">
+    <span class="step-label">STEP 11</span>
+    <h1>Rotational Kinematics</h1>
+
+    <p class="summary">
+      Rotational kinematics describes how objects rotate.
+      Instead of position and velocity in a straight line,
+      we now deal with angles, angular velocity, and angular acceleration.
+    </p>
+
+    <h2>Core Ideas</h2>
+
+    <ul class="subtopics">
+      <li><button data-topic="angular-variables">Angular Variables</button></li>
+      <li><button data-topic="angular-velocity">Angular Velocity</button></li>
+      <li><button data-topic="angular-acceleration">Angular Acceleration</button></li>
+      <li><button data-topic="rotational-equations">Equations of Rotational Motion</button></li>
+    </ul>
+  </main>
+
+</div>
+
+<div class="modal hidden" id="modal">
+  <div class="modal-content">
+    <button class="close-modal">×</button>
+    <div class="modal-body"></div>
+  </div>
+</div>
+
+<section class="hidden-content">
+
+  <div id="angular-variables">
+    <h3>Angular Variables</h3>
+    <p>
+      Rotational motion is described using angular displacement instead of linear displacement.
+      Angles measure how much an object has rotated about an axis.
+    </p>
+    <p>
+      These angular quantities are independent of the object's size.
+    </p>
+  </div>
+
+  <div id="angular-velocity">
+    <h3>Angular Velocity</h3>
+    <p>
+      Angular velocity describes how fast an object rotates.
+      It measures the rate of change of angular displacement.
+    </p>
+    <p>
+      All points on a rigid body have the same angular velocity,
+      even though their linear speeds may differ.
+    </p>
+  </div>
+
+  <div id="angular-acceleration">
+    <h3>Angular Acceleration</h3>
+    <p>
+      Angular acceleration measures how quickly angular velocity changes with time.
+    </p>
+    <p>
+      It plays the same role in rotational motion as linear acceleration does in straight-line motion.
+    </p>
+  </div>
+
+  <div id="rotational-equations">
+    <h3>Equations of Rotational Motion</h3>
+    <p>
+      When angular acceleration is constant, rotational motion follows equations
+      similar to linear kinematics.
+    </p>
+    <p>
+      These equations allow prediction of angular position and velocity over time.
+    </p>
+  </div>
+
+</section>
+
+<script src="../js/global.js"></script>
+<script src="../js/modal.js"></script>
+
+</body>
+</html>

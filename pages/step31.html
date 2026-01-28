@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 31 – Quantum Mechanics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="../index.html" class="logo">Learn Physics</a>
+</header>
+
+<div class="page">
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Journey</h3>
+      <button id="toggle-sidebar">☰</button>
+    </div>
+    <ul id="sidebar-list"></ul>
+  </aside>
+
+  <main class="content">
+    <span class="step-label">STEP 31</span>
+    <h1>Quantum Mechanics</h1>
+
+    <p class="summary">
+      Quantum mechanics is the framework that describes nature at atomic and subatomic scales.
+      It replaces certainty with probability, objects with wavefunctions,
+      and intuition with mathematics. Classical physics does not smoothly evolve into quantum physics.
+      It breaks. Completely.
+    </p>
+
+    <h2>Core Ideas</h2>
+
+    <ul class="subtopics">
+      <li><button data-topic="failure-classical">Failure of Classical Physics</button></li>
+      <li><button data-topic="planck">Planck’s Quantum Hypothesis</button></li>
+      <li><button data-topic="photoelectric">Photoelectric Effect</button></li>
+      <li><button data-topic="duality">Wave–Particle Duality</button></li>
+      <li><button data-topic="debroglie">De Broglie Wavelength</button></li>
+      <li><button data-topic="uncertainty">Heisenberg Uncertainty Principle</button></li>
+      <li><button data-topic="wavefunction">Wave Function & Probability</button></li>
+      <li><button data-topic="schrodinger">Schrödinger Equation</button></li>
+      <li><button data-topic="eigenvalues">Eigenvalues & Quantization</button></li>
+      <li><button data-topic="operators">Expectation Values & Operators</button></li>
+      <li><button data-topic="box">Particle in a Box</button></li>
+      <li><button data-topic="tunneling">Quantum Tunneling</button></li>
+    </ul>
+  </main>
+
+</div>
+
+<div class="modal hidden" id="modal">
+  <div class="modal-content">
+    <button class="close-modal">×</button>
+    <div class="modal-body"></div>
+  </div>
+</div>
+
+<section class="hidden-content">
+
+<div id="failure-classical">
+  <h3>Failure of Classical Physics</h3>
+  <p>Classical physics really thought it had the universe on a leash. Then <b>blackbody radiation</b> showed up and said sit down.</p>
+  <p>So here’s the mess. A blackbody is just an ideal object that absorbs all radiation and re emits it based only on temperature. 
+    Classical physics used Maxwell’s electromagnetic theory plus some math gymnastics and predicted how much energy should come out at each wavelength. 
+    At low frequencies it kinda worked. At high frequencies it went completely insane.</p>
+  <p>According to classical theory the energy radiated should keep increasing as wavelength gets shorter. 
+    Blue. Violet. Ultraviolet. Keep going. No brakes. Infinite energy. Literally infinite. 
+    Which is hilarious because the universe still exists and labs were not vaporized by glowing hot objects. 
+    This disaster is called the <b>ultraviolet catastrophe</b>.
+     Not a metaphor. An actual physics meltdown.</p>
+    <p>The core problem was classical physics assuming energy is continuous. 
+        Any amount. Any size. Smooth slider. Nature said nope. 
+        Experiments showed that real blackbodies emit a peak intensity and then drop off sharply at higher frequencies. 
+        No infinite explosion. Just a calm curve. 
+        Classical equations could not reproduce that curve no matter 
+        how much math you tortured them with.</p>
+    <p>This faceplant exposed a brutal truth. 
+        Classical physics works for big slow things but completely loses its mind at atomic scales. 
+        Enter Max Planck. He committed a crime against classical thinking and assumed energy comes in packets. 
+        Quanta. That single desperate assumption fixed everything 
+        and accidentally kicked off quantum physics. 
+        Old physics didn’t just fail. It was publicly embarrassed.</p>
+</div>
+
+<div id="planck">
+  <h3>Planck’s Quantum Hypothesis</h3>
+  <p>Classical physics loved the idea that energy is a smooth endless smoothie. 
+    Pour as much as you want, any amount, no rules. <b>Max Planck</b> 
+    looked at that and said this is why nothing makes sense anymore. 
+    So he dropped a mental grenade in 1900. Energy does not flow continuously. 
+    It comes in chunks. Discrete packets. 
+    Like pixels. You either get one or you get none. No half a pixel nonsense.</p>
+  <p>Planck was trying to fix blackbody radiation, not rewrite reality. Desperation move. 
+    He assumed that oscillators in matter can only emit or absorb energy in amounts given by 
+    E = hf. Energy equals frequency times a constant now called Planck’s constant. 
+    That constant is tiny, which is why the quantum weirdness 
+    hides from daily life and jumps out only at atomic scales like a horror movie cameo.</p>
+    <p>This single assumption instantly solved the ultraviolet catastrophe. 
+        High frequency radiation stopped blowing up to infinity because energy could 
+        not be divided endlessly. 
+        Nature had a minimum payment requirement. No chunk, no transaction.</p>
+    <p>The wild part is Planck himself hated this idea. He thought it was a math trick. 
+        Reality did not care. This “temporary fix” became the foundation of quantum mechanics. 
+        Energy is not smooth. Time evolution is not smooth. Even reality itself is granular 
+        underneath. The universe is not a continuous painting. 
+        It’s a pixelated render running on rules we did not expect and still barely understand.</p>
+    
+
+</div>
+
+<div id="photoelectric">
+  <h3>Photoelectric Effect</h3>
+  <p>Classical physics again thought it was being clever. Light is a wave. 
+    Waves mean more intensity equals more energy. Shine brighter light, 
+    electrons should pop out eventually. Patiently. Politely. Reality laughed and threw the 
+    <b>photoelectric effect</b> at its face.</p>
+  <p>Here’s the setup. Shine light on a metal surface. Electrons get ejected. Simple. 
+    Except it only happens if the light’s <b>frequency</b> is high enough. 
+    Crank the intensity all you want with low frequency light. Nothing happens. 
+    Zero electrons. You could roast the metal in bright red light till the heat death of the 
+    universe. Still nothing. But use dim ultraviolet light and boom. Electrons fly out 
+    instantly. No warm up. No delay. No negotiations.</p>
+    <p>This broke classical wave theory completely. Intensity was supposed to matter. 
+        It didn’t. Frequency did. That means energy is tied to frequency, not brightness. 
+        Which screams particle behavior. Light arriving in discrete packets. 
+        Each packet either has enough energy to kick an electron out or it doesn’t. 
+        No teamwork allowed.</p>
+    <p>Enter <b>Albert Einstein</b>. He said light comes as photons with energy E = hf. 
+        One photon hits one electron. If hf is above the metal’s work function, electron escapes. 
+        If not, tough luck. Intensity just means more photons, not stronger ones.</p>
+    <p>This wasn’t just clever. It was revolutionary. 
+        Light is not just a wave. It’s a punk particle that refuses to play by classical rules. 
+        And yes, this idea won Einstein a Nobel Prize. Not relativity. This. 
+        Because nothing scares physics more than experiments that say you’re wrong.</p>
+</div>
+
+<div id="duality">
+  <h3>Wave–Particle Duality</h3>
+  <p>Physics wanted clean labels. Wave here. Particle there. Nice boxes. Reality kicked the boxes over and called it <b>wave particle duality</b>. Light is a wave. Light is a particle. Electrons too. Yes at the same time. No you don’t get to pick. Deal with it.</p>
+
+<p>Start with light. <b>Thomas Young</b> ran the double slit experiment in 1801. Shine light through two narrow slits, project it onto a screen, and you get an interference pattern. Bright and dark bands. Pure wave behavior. Peaks canceling peaks, troughs ruining everything. Classical physics clapped. See Waves.</p>
+
+<p>Then the photoelectric effect happened and <b>Albert Einstein</b> showed that light arrives as photons. Discrete hits. One photon one electron. No frequency no escape. That is particle behavior. Same light. Different experiment. Opposite personality.</p>
+
+<p>Now comes the truly disrespectful part. Matter joins the circus. <b>Louis de Broglie</b> proposed that particles like electrons should also behave like waves. People laughed. Then experiments shut them up. The <b>Davisson Germer experiment</b> fired electrons at a crystal and observed diffraction patterns. Interference. Wave behavior. From particles with mass.</p>
+
+<p>Even worse, single particle experiments show that electrons fired one by one still build up an interference pattern over time. Each electron acts like a wave spreading out, interfering with itself, then lands as a single dot. Wave while traveling. Particle when detected.</p>
+
+<p>Observation matters. Measurement collapses the show. Wave particle duality isn’t saying things switch costumes. It’s saying classical categories are trash at small scales. Nature doesn’t care about your intuition.</p>
+
+<p>Light and matter follow quantum rules that look absurd because your brain evolved to dodge rocks, not understand reality. Underneath everything, the universe runs on probabilities, not certainties. And it works perfectly, whether you’re comfortable with it or not.</p>
+
+</div>
+
+<div id="debroglie">
+  <h3>De Broglie Wavelength</h3>
+  <p>Classical physics really tried to draw a line in the sand. Waves over there. Particles over here. Massy stuff does not wiggle. End of discussion.</p>
+
+<p>Then <b>Louis de Broglie</b> walked in and said actually everything wiggles. Even rocks. Even you. Calm down, the wavelength is just embarrassingly tiny.</p>
+
+<p>De Broglie’s idea was brutally simple and therefore dangerous. If light which we thought was a wave sometimes behaves like a particle, then particles should sometimes behave like waves. Symmetry. Balance. Physics poetry.</p>
+
+<p>He proposed that any particle with momentum p has a wavelength λ = h over p. That’s it. No mystical chanting. Just one equation quietly detonating classical intuition.</p>
+
+<p>For everyday objects this wavelength is microscopic beyond hope. A moving car has a wavelength smaller than a proton’s patience. So no, you are not diffracting through doorways like a ghost.</p>
+
+<p>But electrons. Oh electrons are light enough that their wavelengths matter. And experiments confirmed it. Electron diffraction patterns showed interference exactly like waves. Same fringes. Same math. Same headache.</p>
+
+<p>What’s wild is what this means conceptually. Particles do not have exact positions and exact momenta at the same time. A wavelength implies spread. Smearing. Probability.</p>
+
+<p>An electron is not a tiny billiard ball flying neatly. It’s a standing wave of likelihood until measured, then it snaps into a hit point like reality making up its mind last second.</p>
+
+<p>De Broglie didn’t just add a feature. He broke the idea of matter being solid and definite. Everything has wave nature. We just don’t notice because Planck’s constant is cruelly small.</p>
+
+<p>The universe is not built from hard dots. It’s built from vibrations pretending to be objects long enough for us to function. Reality is secretly wiggly everywhere, and classical physics never saw it coming.</p>
+
+</div>
+
+<div id="uncertainty">
+  <h3>Heisenberg Uncertainty Principle</h3>
+  <p>Physics finally snapped and said enough. You want exact position AND exact momentum? Control freak behavior. Nature slammed the door and wrote a law about it.</p>
+
+<p>That law is the <b>Heisenberg Uncertainty Principle</b>, discovered by <b>Werner Heisenberg</b> in 1927 while quantum theory was already making everyone mildly unwell.</p>
+
+<p>Important thing first. This is not about bad instruments. Not shaky hands. Not cheap microscopes. This is not “we suck at measuring.” This is “the universe does not allow it.” Brutal difference.</p>
+
+<p>Here’s the why. To know where a particle is, you need to interact with it. Usually with light. But light comes in photons. Punchy little packets.</p>
+
+<p>If you use high frequency light to pinpoint an electron’s position, that photon slams into it and changes its momentum. Congrats, you know where it was. You just ruined where it’s going.</p>
+
+<p>Use low frequency light to avoid disturbing it? Now your wavelength is too long and your position info turns into a blur. There is no win condition.</p>
+
+<p>Heisenberg realized this wasn’t a technical problem. It was structural. Because particles have wave nature thanks to de Broglie, a wave localized in space must be spread in momentum.</p>
+
+<p>Tight wave packet equals wide range of momenta. Narrow momentum equals smeared position. This trade off is baked into the math. Fourier transforms quietly enforcing chaos.</p>
+
+<p>The uncertainty principle isn’t saying nothing is real. It’s saying reality is probabilistic at its core. Particles don’t have sharp values waiting to be revealed.</p>
+
+<p>Measurement doesn’t uncover truth. It helps create it. Before observation, nature keeps options open like an indecisive god.</p>
+
+<p>This idea shattered classical determinism. Laplace’s demon died screaming. The universe is not a clock you can rewind and predict forever.</p>
+
+<p>It’s a rule bound gamble engine that still somehow builds stars, atoms, and you overthinking physics at night. Exactness is a human obsession. Nature never signed that contract.</p>
+
+</div>
+
+<div id="wavefunction">
+  <h3>Wave Function and Probability Interpretation</h3>
+  <p>Welcome to the point where physics stops pretending to be sane. The <b>wave function</b>, written as ψ, is the most important thing in quantum mechanics and also the least real thing you will ever meet.</p>
+
+<p>It does not represent a wave in space. It is not a physical object. You cannot poke it. And yet its square literally decides what happens in reality. Peak comedy.</p>
+
+<p>This madness comes from <b>Erwin Schrödinger</b>. In 1926 he wrote down an equation describing how ψ evolves in time. At first he hoped ψ was something real like a charge density. That dream died quickly.</p>
+
+<p>Because ψ can be complex. As in imaginary numbers. As in square root of minus one imaginary. Try explaining that to a detector.</p>
+
+<p>Then <b>Max Born</b> stepped in and said fine stop crying. ψ itself is not physical. But |ψ|² is.</p>
+
+<p>Square the wave function and you get probability. The chance of finding the particle at a certain place and time. Not certainty. Not destiny. Just odds.</p>
+
+<p>This was horrifying. Classical physics says particles have positions whether you look or not. Quantum mechanics says no.</p>
+
+<p>Before measurement, the particle is described by a spread of possibilities. The wave function encodes all allowed outcomes at once.</p>
+
+<p>Measurement does not reveal which one was true. It forces reality to pick one. That’s the crazy part.</p>
+
+<p>The Schrödinger equation evolves ψ smoothly and deterministically. Clean math. No drama.</p>
+
+<p>But the moment you measure, boom. Wave function collapse. Probability becomes fact. Physics switches from poetry to paperwork instantly.</p>
+
+<p>ψ is not real. But |ψ|² controls everything you ever observe. Atoms exist because of it. Chemistry works because of it. Electronics depend on it.</p>
+
+<p>You are held together by something that does not exist until you ask a question. Reality is not made of things. It is made of chances waiting to be squared.</p>
+
+</div>
+
+<div id="schrodinger">
+  <h3>Schrödinger Equation</h3>
+  <p>this is the engine. the rule of motion. quantum version of newton’s laws.</p>
+
+<p>time dependent form</p>
+
+<p>iħ ∂ψ/∂t = Ĥψ</p>
+
+<p>Ĥ is the hamiltonian operator representing total energy. plug in the system. out comes time evolution.</p>
+
+<p>time independent form arises when potential does not change with time. it gives stationary states and energy eigenvalues.</p>
+
+<p>schrödinger equation is linear. this allows superposition. states can add. interference happens.</p>
+
+<p>solutions are wavefunctions. allowed solutions are constrained by boundary conditions. not all energies allowed.</p>
+
+<p>this equation is not derived. it is postulated. justified by experiments.</p>
+
+<p>it predicts atomic spectra. tunneling. bonding. semiconductors. lasers. literally modern technology.</p>
+
+<p>the equation itself is simple. understanding what it means is where brains melt.</p>
+
+<p>deterministic evolution until measurement. probabilistic outcomes after.</p>
+
+<p>everything quantum starts here.</p>
+
+  
+</div>
+
+<div id="eigenvalues">
+  <h3>Eigenvalues and Quantization</h3>
+  <p>operators acting on wavefunctions produce measurable quantities. when an operator acts on a state and returns the same state times a number that number is an eigenvalue.</p>
+
+<p>energy eigenvalues correspond to allowed energy levels. quantization emerges naturally from boundary conditions.</p>
+
+<p>discrete energy is not imposed. it falls out of the math.</p>
+
+<p>this explains atomic spectra. electrons jump between energy levels emitting photons of specific frequencies.</p>
+
+<p>eigenstates are stable. superpositions evolve in time.</p>
+
+<p>quantization explains stability of matter. electrons cannot lose arbitrary energy.</p>
+
+<p>this concept generalizes beyond energy. momentum angular momentum spin are all quantized.</p>
+
+<p>quantization is geometry plus boundary conditions plus wave nature. not magic.</p>
+
+</div>
+
+<div id="operators">
+  <h3>Expectation Values and Operators</h3>
+  <p>Observables are operators. Math decides what you can measure.</p>
+
+<p>Classical physics lets you measure things directly. Position. Momentum. Energy. Just grab them conceptually.</p>
+
+<p>Quantum mechanics said absolutely not. If you want to measure something, you must apply an operator.</p>
+
+<p>Observables are not numbers anymore. They are actions. Mathematical machines.</p>
+
+<p>Each observable has a corresponding operator. Position is multiplication by x. Momentum is a derivative operator. Energy is the Hamiltonian operator.</p>
+
+<p>You don’t ask what a particle has. You ask what happens when an operator acts on the wave function. Brutal shift in mindset.</p>
+
+<p>Now here’s where expectation values come in. Because most of the time, a quantum system is not sitting in a single eigenstate.</p>
+
+<p>It’s in a superposition. Many possibilities at once.</p>
+
+<p>So if you measure an observable many times on identical systems, you get different outcomes with different probabilities.</p>
+
+<p>The expectation value is the average result you would get over many measurements. Not what happens once. What happens statistically.</p>
+
+<p>Mathematically, the expectation value is calculated by sandwiching the operator between ψ* and ψ and integrating over space.</p>
+
+<p>Sounds horrifying. Conceptually it’s simple.</p>
+
+<p>The wave function gives probabilities. The operator tells you how the observable behaves. The integral adds everything up weighted by likelihood.</p>
+
+<p>This is where quantum mechanics fully commits to math running reality.</p>
+
+<p>What you can measure depends on the operator. What values you can get depend on its eigenvalues.</p>
+
+<p>If the wave function is an eigenstate of that operator, measurement is predictable. If not, welcome to probability roulette.</p>
+
+<p>Reality doesn’t hand you properties. You extract them by applying rules.</p>
+
+<p>Observables are not passive traits. They are outcomes of interaction.</p>
+
+<p>Math doesn’t describe measurement. Math is the measurement.</p>
+
+<p>And that’s deeply unsettling, yet annoyingly effective.</p>
+
+</div>
+
+<div id="box">
+  <h3>Particle in a Box</h3>
+  <p>Welcome to <b>particle in a box</b>, aka quantum mechanics taking a toddler and locking it in a perfectly smooth room to teach it rules.</p>
+
+<p>Simple setup. Zero mercy. Foundational brain damage.</p>
+
+<p>Imagine a tiny particle like an electron trapped between two walls. The walls are infinite. Not tall. Not strong. <b>Infinite</b>.</p>
+
+<p>The particle cannot escape. Ever. Outside the box, energy is forbidden. Inside, it can move freely.</p>
+
+<p>This is the entire system. No forces. No friction. No drama. Just prison.</p>
+
+<p>Classical brain says easy. The particle can have any energy it wants. Slow. Fast. Whatever. Bounce around.</p>
+
+<p>Quantum brain says absolutely not.</p>
+
+<p>When you solve the Schrödinger equation for this system using <b>Erwin Schrödinger</b>, you get a shock.</p>
+
+<p>Only certain energies are allowed. Discrete values. Stairs. Not a ramp.</p>
+
+<p>Why? Because the particle behaves like a wave.</p>
+
+<p>And waves inside a box must form <b>standing waves</b>.</p>
+
+<p>Just like a guitar string fixed at both ends. You cannot get any random vibration. Only those that fit perfectly between the walls.</p>
+
+<p>If the wave doesn’t fit, it cancels itself out and dies. Nature has no patience for ugly solutions.</p>
+
+<p>Each allowed standing wave corresponds to an <b>energy level</b>.</p>
+
+<p>Lowest one is not zero. This is huge.</p>
+
+<p>Even the calmest trapped particle has energy. Called <b>zero point energy</b>.</p>
+
+<p>Meaning motion never fully stops. Ever. The universe hates stillness.</p>
+
+<p>Now position.</p>
+
+<p>The particle does not have a definite location bouncing left and right. Instead, it has a <b>probability distribution</b>.</p>
+
+<p>Some places you are more likely to find it. Some places impossible.</p>
+
+<p>For the lowest energy state, the particle is most likely in the middle.</p>
+
+<p>For higher states, weird nodes appear where the probability is zero.</p>
+
+<p>The particle never shows up there. Ever. Even though the box is empty and flat.</p>
+
+<p>Quantum logic.</p>
+
+<p>Particle in a box teaches everything.</p>
+
+<p>Quantization. Wave nature of matter. Probability instead of certainty. Boundary conditions controlling reality.</p>
+
+<p>No forces needed. Just math and confinement.</p>
+
+<p>This is baby quantum mechanics.</p>
+
+<p>And if this already feels unhinged, congratulations. You are understanding it correctly.</p>
+
+</div>
+
+<div id="tunneling">
+  <h3>Quantum Tunneling</h3>
+  <p>Picture a ball rolling toward a hill. Not enough energy? It rolls back. End of story. Classical physics closes the book and goes home.</p>
+
+<p>Quantum mechanics shows up, flips the table, and says the ball might just appear on the other side anyway.</p>
+
+<p>That nonsense is quantum tunneling.</p>
+
+<p>Here’s the baby version. A quantum particle is not a tiny marble. It is a wave. A fuzzy spread out thing described by a wave function.</p>
+
+<p>When this wave hits a wall or energy barrier higher than the particle’s energy, classical logic says stop.</p>
+
+<p>Quantum logic says part of the wave sneaks into the wall.</p>
+
+<p>Inside the barrier, the wave doesn’t vanish. It fades. Decays. Gets weaker.</p>
+
+<p>But if the wall is thin enough, the wave can leak through and reappear on the other side.</p>
+
+<p>When you measure the particle, you might find it beyond the wall.</p>
+
+<p>Not because it smashed through. Not because it climbed over. It never had the energy.</p>
+
+<p>It tunneled.</p>
+
+<p>Like reality buffering badly and skipping a frame.</p>
+
+<p>Important detail. This is not magic. No laws are broken. Energy is conserved.</p>
+
+<p>The particle does not gain extra energy. It simply has a non zero probability of existing where classical physics says impossible.</p>
+
+<p>Probability is doing the heavy lifting here.</p>
+
+<p>This happens constantly.</p>
+
+<p>Nuclear fusion in stars? Tunneling.</p>
+
+<p>Alpha decay in radioactive atoms? Tunneling.</p>
+
+<p>Modern electronics? Tunneling.</p>
+
+<p>The scanning tunneling microscope can literally see individual atoms because electrons tunnel across tiny gaps.</p>
+
+<p>Your sun works because protons cheat barriers they should never cross.</p>
+
+<p>The weirder part.</p>
+
+<p>The particle does not lose energy while tunneling.</p>
+
+<p>The barrier only reduces probability, not strength.</p>
+
+<p>Thicker wall means lower chance. Infinite wall means zero chance.</p>
+
+<p>That’s it. No drama.</p>
+
+<p>Quantum tunneling teaches a brutal lesson.</p>
+
+<p>Impossible is a classical word.</p>
+
+<p>Quantum mechanics only understands unlikely.</p>
+
+<p>Walls are suggestions. Boundaries are vibes.</p>
+
+<p>And the universe has been exploiting that loophole since the beginning.</p>
+
+</div>
+
+</section>
+
+<script src="../js/global.js"></script>
+<script src="../js/modal.js"></script>
+
+</body>
+</html>

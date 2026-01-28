@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 23 – Magnetic Fields</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="../index.html" class="logo">Learn Physics</a>
+</header>
+
+<div class="page">
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Journey</h3>
+      <button id="toggle-sidebar">☰</button>
+    </div>
+    <ul id="sidebar-list"></ul>
+  </aside>
+
+  <main class="content">
+    <span class="step-label">STEP 23</span>
+    <h1>Magnetic Fields</h1>
+
+    <p class="summary">
+      Magnetic fields describe how moving charges interact with space.
+      Unlike electric fields, magnetism only appears when charges are in motion.
+      This topic reveals that electricity and magnetism are deeply connected.
+    </p>
+
+    <h2>Core Ideas</h2>
+
+    <ul class="subtopics">
+      <li><button data-topic="magnetic-field">Magnetic Field Concept</button></li>
+      <li><button data-topic="lorentz-force">Lorentz Force</button></li>
+      <li><button data-topic="motion-charge">Motion of Charged Particles</button></li>
+      <li><button data-topic="current-wire">Force on Current-Carrying Wire</button></li>
+      <li><button data-topic="biot-savart">Biot–Savart Law</button></li>
+      <li><button data-topic="ampere-law">Ampere’s Circuital Law</button></li>
+      <li><button data-topic="magnetic-materials">Magnetic Materials</button></li>
+    </ul>
+  </main>
+</div>
+
+<div class="modal hidden" id="modal">
+  <div class="modal-content">
+    <button class="close-modal">×</button>
+    <div class="modal-body"></div>
+  </div>
+</div>
+
+<section class="hidden-content">
+
+<div id="magnetic-field">
+  <h3>Magnetic Field Concept</h3>
+  <p>
+    A magnetic field is a region of space where a moving electric charge experiences a force.
+    Unlike electric fields, magnetic fields do not act on stationary charges.
+  </p>
+  <p>
+    This immediately tells us that magnetism is a relativistic effect of moving charges,
+    not a separate fundamental interaction.
+  </p>
+</div>
+
+<div id="lorentz-force">
+  <h3>Lorentz Force</h3>
+  <p>
+    The Lorentz force describes how a charged particle behaves in electric and magnetic fields.
+    The magnetic part of this force is always perpendicular to the velocity of the charge.
+  </p>
+  <p>
+    Because of this perpendicular nature, magnetic fields change direction of motion,
+    not the speed or kinetic energy of the particle.
+  </p>
+</div>
+
+<div id="motion-charge">
+  <h3>Motion of Charged Particles</h3>
+  <p>
+    Charged particles moving in a uniform magnetic field follow circular or helical paths.
+    The magnetic force acts as a centripetal force.
+  </p>
+  <p>
+    This principle is used in cyclotrons, mass spectrometers, and particle accelerators.
+  </p>
+</div>
+
+<div id="current-wire">
+  <h3>Force on Current-Carrying Wire</h3>
+  <p>
+    A current-carrying conductor placed in a magnetic field experiences a force.
+    This force arises from the combined magnetic forces on moving charges inside the wire.
+  </p>
+  <p>
+    This principle is the foundation of electric motors.
+  </p>
+</div>
+
+<div id="biot-savart">
+  <h3>Biot–Savart Law</h3>
+  <p>
+    The Biot–Savart law calculates the magnetic field produced by a small current element.
+  </p>
+  <p>
+    It shows how magnetic fields depend on current magnitude, direction, and distance.
+  </p>
+</div>
+
+<div id="ampere-law">
+  <h3>Ampere’s Circuital Law</h3>
+  <p>
+    Ampere’s law relates magnetic fields around a closed loop to the current passing through it.
+  </p>
+  <p>
+    It simplifies magnetic field calculations for symmetric current distributions.
+  </p>
+</div>
+
+<div id="magnetic-materials">
+  <h3>Magnetic Materials</h3>
+  <p>
+    Materials respond differently to magnetic fields depending on atomic structure.
+    Diamagnetic, paramagnetic, and ferromagnetic materials behave in distinct ways.
+  </p>
+  <p>
+    Ferromagnetism arises from aligned electron spins, not classical currents.
+  </p>
+</div>
+
+</section>
+
+<script src="../js/global.js"></script>
+<script src="../js/modal.js"></script>
+</body>
+</html>

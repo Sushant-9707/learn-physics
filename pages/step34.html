@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 34 – Particle Physics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="../index.html" class="logo">Learn Physics</a>
+</header>
+
+<div class="page">
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Journey</h3>
+      <button id="toggle-sidebar">☰</button>
+    </div>
+    <ul id="sidebar-list"></ul>
+  </aside>
+
+  <main class="content">
+    <span class="step-label">STEP 34</span>
+    <h1>Particle Physics</h1>
+
+    <p class="summary">
+      Particle physics studies the most fundamental building blocks of matter and the
+      forces through which they interact. It asks what everything is made of at the
+      deepest level and why the universe has the structure it does.
+      This field replaces solid objects with quantum fields and interactions.
+    </p>
+
+    <h2>Core Ideas</h2>
+
+    <ul class="subtopics">
+      <li><button data-topic="fundamental">What Are Fundamental Particles</button></li>
+      <li><button data-topic="fermions">Fermions and Matter Particles</button></li>
+      <li><button data-topic="bosons">Force Carrier Particles</button></li>
+      <li><button data-topic="standard-model">The Standard Model</button></li>
+      <li><button data-topic="higgs">Higgs Mechanism and Higgs Boson</button></li>
+      <li><button data-topic="interactions">Fundamental Interactions</button></li>
+      <li><button data-topic="antimatter">Antimatter</button></li>
+      <li><button data-topic="limits">Limits of the Standard Model</button></li>
+    </ul>
+  </main>
+
+</div>
+
+<div class="modal hidden" id="modal">
+  <div class="modal-content">
+    <button class="close-modal">×</button>
+    <div class="modal-body"></div>
+  </div>
+</div>
+
+<section class="hidden-content">
+
+<div id="fundamental">
+  <h3>What Are Fundamental Particles</h3>
+  <p>
+    Fundamental particles are particles that are not known to be made of anything smaller.
+    Unlike atoms or protons, they show no internal structure in experiments.
+  </p>
+  <p>
+    At everyday scales, matter looks continuous and solid.
+    At atomic scales, matter breaks into atoms and electrons.
+    At subatomic scales, even protons and neutrons break into smaller components.
+  </p>
+  <p>
+    Particle physics goes one level deeper and asks which particles cannot be divided further.
+    These particles are treated as point-like, meaning they have no measurable size.
+  </p>
+  <p>
+    All known matter and forces can be described using a small set of such particles
+    interacting through fundamental forces.
+  </p>
+</div>
+
+<div id="fermions">
+  <h3>Fermions and Matter Particles</h3>
+  <p>
+    Fermions are particles that make up matter.
+    They follow the Pauli exclusion principle, meaning no two identical fermions
+    can occupy the same quantum state.
+  </p>
+  <p>
+    Fermions are divided into quarks and leptons.
+    Quarks combine to form protons, neutrons, and other hadrons.
+    Leptons include electrons and neutrinos.
+  </p>
+  <p>
+    There are three generations of fermions.
+    Each generation is heavier than the previous one,
+    but only the first generation forms ordinary matter.
+  </p>
+  <p>
+    The heavier generations exist briefly in high-energy environments
+    and decay into lighter particles.
+  </p>
+</div>
+
+<div id="bosons">
+  <h3>Force Carrier Particles</h3>
+  <p>
+    Bosons are particles responsible for mediating forces.
+    Unlike fermions, multiple bosons can occupy the same quantum state.
+  </p>
+  <p>
+    The photon mediates the electromagnetic force.
+    Gluons mediate the strong nuclear force.
+    W and Z bosons mediate the weak nuclear force.
+  </p>
+  <p>
+    These particles are exchanged between matter particles,
+    producing interactions that appear as forces at larger scales.
+  </p>
+  <p>
+    Forces are not continuous pulls.
+    They are quantum interactions involving particle exchange.
+  </p>
+</div>
+
+<div id="standard-model">
+  <h3>The Standard Model</h3>
+  <p>
+    The Standard Model is the theoretical framework describing all known
+    fundamental particles and three of the four fundamental forces.
+  </p>
+  <p>
+    It successfully explains electromagnetic, weak, and strong interactions
+    using quantum field theory.
+  </p>
+  <p>
+    The model classifies particles into fermions, gauge bosons, and the Higgs boson.
+    Its predictions have been verified to extraordinary precision.
+  </p>
+  <p>
+    Despite its success, the Standard Model is incomplete.
+    It does not include gravity and cannot explain dark matter or dark energy.
+  </p>
+</div>
+
+<div id="higgs">
+  <h3>Higgs Mechanism and Higgs Boson</h3>
+  <p>
+    The Higgs mechanism explains why some particles have mass.
+    Without it, all fundamental particles would move at the speed of light.
+  </p>
+  <p>
+    The Higgs field exists everywhere in space.
+    Particles interacting strongly with this field acquire mass.
+  </p>
+  <p>
+    The Higgs boson is an excitation of the Higgs field.
+    Its discovery in 2012 confirmed a key prediction of the Standard Model.
+  </p>
+  <p>
+    Mass is not an intrinsic label.
+    It arises from interaction with a universal field.
+  </p>
+</div>
+
+<div id="interactions">
+  <h3>Fundamental Interactions</h3>
+  <p>
+    There are four known fundamental interactions:
+    gravitational, electromagnetic, strong nuclear, and weak nuclear.
+  </p>
+  <p>
+    Particle physics focuses mainly on the last three,
+    which are described by quantum field theories.
+  </p>
+  <p>
+    The strong force binds quarks together inside protons and neutrons.
+    The weak force allows particles to change type, enabling radioactive decay.
+  </p>
+  <p>
+    Each interaction has its own properties, range, and strength,
+    shaping the structure of matter.
+  </p>
+</div>
+
+<div id="antimatter">
+  <h3>Antimatter</h3>
+  <p>
+    For every particle, there exists a corresponding antiparticle
+    with the same mass but opposite charge and quantum numbers.
+  </p>
+  <p>
+    When matter and antimatter meet, they annihilate,
+    converting their mass into energy.
+  </p>
+  <p>
+    Antimatter is routinely produced in particle accelerators
+    and studied in laboratories.
+  </p>
+  <p>
+    A major mystery is why the observable universe contains far more matter
+    than antimatter.
+  </p>
+</div>
+
+<div id="limits">
+  <h3>Limits of the Standard Model</h3>
+  <p>
+    Despite its accuracy, the Standard Model leaves many questions unanswered.
+    It does not explain gravity or the nature of dark matter.
+  </p>
+  <p>
+    It cannot account for the observed imbalance between matter and antimatter.
+    It also treats neutrino masses in an incomplete way.
+  </p>
+  <p>
+    These limitations suggest that the Standard Model is part of a deeper theory.
+    Many proposed extensions exist, but none are confirmed yet.
+  </p>
+  <p>
+    Particle physics remains an open field,
+    driven by both experimental discovery and theoretical exploration.
+  </p>
+</div>
+
+</section>
+
+<script src="../js/global.js"></script>
+<script src="../js/modal.js"></script>
+
+</body>
+</html>

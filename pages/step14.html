@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 14 – Oscillations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="../index.html" class="logo">Learn Physics</a>
+</header>
+
+<div class="page">
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Journey</h3>
+      <button id="toggle-sidebar">☰</button>
+    </div>
+    <ul id="sidebar-list"></ul>
+  </aside>
+
+  <main class="content">
+    <span class="step-label">STEP 14</span>
+    <h1>Oscillations</h1>
+
+    <p class="summary">
+      Oscillatory motion occurs when a system moves repeatedly back and forth
+      about a stable equilibrium position. This type of motion is fundamental
+      to physics and appears in mechanical systems, electrical circuits,
+      atomic vibrations, and even biological processes.
+    </p>
+
+    <h2>Core Ideas</h2>
+
+    <ul class="subtopics">
+      <li><button data-topic="periodic-motion">Periodic Motion</button></li>
+      <li><button data-topic="restoring-force">Restoring Force</button></li>
+      <li><button data-topic="shm">Simple Harmonic Motion</button></li>
+      <li><button data-topic="spring-system">Spring–Mass System</button></li>
+      <li><button data-topic="pendulum">Simple Pendulum</button></li>
+      <li><button data-topic="energy-shm">Energy in Oscillatory Motion</button></li>
+      <li><button data-topic="damped-motion">Damped Oscillations</button></li>
+      <li><button data-topic="forced-motion">Forced Oscillations</button></li>
+      <li><button data-topic="resonance">Resonance</button></li>
+    </ul>
+  </main>
+
+</div>
+
+<div class="modal hidden" id="modal">
+  <div class="modal-content">
+    <button class="close-modal">×</button>
+    <div class="modal-body"></div>
+  </div>
+</div>
+
+<section class="hidden-content">
+
+  <div id="periodic-motion">
+    <h3>Periodic Motion</h3>
+    <p>
+      Motion is said to be periodic if it repeats itself after equal intervals of time.
+      Examples include the motion of a pendulum, vibrations of a guitar string,
+      and alternating current in electrical circuits.
+    </p>
+    <p>
+      Periodic motion provides the foundation for understanding oscillations
+      and wave phenomena.
+    </p>
+  </div>
+
+  <div id="restoring-force">
+    <h3>Restoring Force</h3>
+    <p>
+      A restoring force is a force that always acts toward the equilibrium position.
+      It is responsible for bringing the system back whenever it is displaced.
+    </p>
+    <p>
+      Without a restoring force, oscillatory motion cannot occur.
+    </p>
+  </div>
+
+  <div id="shm">
+    <h3>Simple Harmonic Motion</h3>
+    <p>
+      Simple harmonic motion is a special type of oscillatory motion
+      in which the restoring force is directly proportional to displacement
+      and opposite in direction.
+    </p>
+    <p>
+      This proportionality leads to sinusoidal motion and makes SHM
+      mathematically simple yet physically powerful.
+    </p>
+  </div>
+
+  <div id="spring-system">
+    <h3>Spring–Mass System</h3>
+    <p>
+      A mass attached to a spring exhibits simple harmonic motion
+      when displaced from equilibrium and released.
+    </p>
+    <p>
+      The stiffness of the spring determines how quickly the system oscillates.
+    </p>
+  </div>
+
+  <div id="pendulum">
+    <h3>Simple Pendulum</h3>
+    <p>
+      A simple pendulum consists of a mass suspended by a light string.
+      For small angular displacements, its motion closely approximates SHM.
+    </p>
+    <p>
+      The period of a pendulum depends on its length and the local gravitational field.
+    </p>
+  </div>
+
+  <div id="energy-shm">
+    <h3>Energy in Oscillatory Motion</h3>
+    <p>
+      During oscillations, energy continuously transforms between
+      kinetic and potential forms.
+    </p>
+    <p>
+      In ideal systems without losses, total mechanical energy remains constant.
+    </p>
+  </div>
+
+  <div id="damped-motion">
+    <h3>Damped Oscillations</h3>
+    <p>
+      Real oscillatory systems lose energy due to friction, air resistance,
+      or internal forces.
+    </p>
+    <p>
+      As a result, the amplitude of oscillations gradually decreases with time.
+    </p>
+  </div>
+
+  <div id="forced-motion">
+    <h3>Forced Oscillations</h3>
+    <p>
+      Forced oscillations occur when an external periodic force
+      continuously supplies energy to a system.
+    </p>
+    <p>
+      The response of the system depends on the frequency of the applied force.
+    </p>
+  </div>
+
+  <div id="resonance">
+    <h3>Resonance</h3>
+    <p>
+      Resonance occurs when the frequency of the external force
+      matches the natural frequency of the system.
+    </p>
+    <p>
+      At resonance, energy transfer is most efficient,
+      leading to large oscillation amplit.
+    </p>
+  </div>
+
+</section>
+
+<script src="../js/global.js"></script>
+<script src="../js/modal.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 24 – Electromagnetic Induction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="../index.html" class="logo">Learn Physics</a>
+</header>
+
+<div class="page">
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Journey</h3>
+      <button id="toggle-sidebar">☰</button>
+    </div>
+    <ul id="sidebar-list"></ul>
+  </aside>
+
+  <main class="content">
+    <span class="step-label">STEP 24</span>
+    <h1>Electromagnetic Induction</h1>
+
+    <p class="summary">
+      Electromagnetic induction explains how changing magnetic fields generate electric currents.
+      This phenomenon powers generators, transformers, and modern electrical infrastructure.
+    </p>
+
+    <h2>Core Ideas</h2>
+
+    <ul class="subtopics">
+      <li><button data-topic="faraday">Faraday’s Experiments</button></li>
+      <li><button data-topic="flux">Magnetic Flux</button></li>
+      <li><button data-topic="faraday-law">Faraday’s Law</button></li>
+      <li><button data-topic="lenz">Lenz’s Law</button></li>
+      <li><button data-topic="motional-emf">Motional EMF</button></li>
+      <li><button data-topic="self-induction">Self Induction</button></li>
+      <li><button data-topic="mutual-induction">Mutual Induction</button></li>
+    </ul>
+  </main>
+</div>
+
+<div class="modal hidden" id="modal">
+  <div class="modal-content">
+    <button class="close-modal">×</button>
+    <div class="modal-body"></div>
+  </div>
+</div>
+
+<section class="hidden-content">
+
+<div id="faraday">
+  <h3>Faraday’s Experiments</h3>
+  <p>
+    Faraday discovered that electric current can be produced without batteries,
+    simply by changing magnetic conditions.
+  </p>
+  <p>
+    His experiments showed that motion or variation, not static fields, creates current.
+  </p>
+</div>
+
+<div id="flux">
+  <h3>Magnetic Flux</h3>
+  <p>
+    Magnetic flux measures how much magnetic field passes through a given surface.
+  </p>
+  <p>
+    It depends on field strength, area, and orientation of the surface.
+  </p>
+</div>
+
+<div id="faraday-law">
+  <h3>Faraday’s Law</h3>
+  <p>
+    Faraday’s law states that induced EMF is proportional to the rate of change of magnetic flux.
+  </p>
+  <p>
+    Faster changes produce stronger induced currents.
+  </p>
+</div>
+
+<div id="lenz">
+  <h3>Lenz’s Law</h3>
+  <p>
+    Lenz’s law gives the direction of induced current.
+    The induced current always opposes the change that caused it.
+  </p>
+  <p>
+    This law enforces conservation of energy.
+  </p>
+</div>
+
+<div id="motional-emf">
+  <h3>Motional EMF</h3>
+  <p>
+    Motional EMF arises when a conductor moves through a magnetic field.
+  </p>
+  <p>
+    Charges experience magnetic forces, leading to potential difference.
+  </p>
+</div>
+
+<div id="self-induction">
+  <h3>Self Induction</h3>
+  <p>
+    A changing current in a coil induces an EMF in the same coil.
+  </p>
+  <p>
+    This effect resists sudden changes in current.
+  </p>
+</div>
+
+<div id="mutual-induction">
+  <h3>Mutual Induction</h3>
+  <p>
+    Mutual induction occurs when a changing current in one coil induces EMF in another.
+  </p>
+  <p>
+    Transformers operate based on this principle.
+  </p>
+</div>
+
+</section>
+
+<script src="../js/global.js"></script>
+<script src="../js/modal.js"></script>
+</body>
+</html>

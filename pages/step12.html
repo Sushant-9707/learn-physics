@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 12 – Rotational Dynamics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="../index.html" class="logo">Learn Physics</a>
+</header>
+
+<div class="page">
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Journey</h3>
+      <button id="toggle-sidebar">☰</button>
+    </div>
+    <ul id="sidebar-list"></ul>
+  </aside>
+
+  <main class="content">
+    <span class="step-label">STEP 12</span>
+    <h1>Rotational Dynamics</h1>
+
+    <p class="summary">
+      Rotational dynamics explains why objects start rotating,
+      slow down, or change their rotational motion.
+      It connects forces to rotation through torque and angular momentum.
+    </p>
+
+    <h2>Core Ideas</h2>
+
+    <ul class="subtopics">
+      <li><button data-topic="torque">Torque</button></li>
+      <li><button data-topic="moment-inertia">Moment of Inertia</button></li>
+      <li><button data-topic="rotational-newton">Newton’s Laws for Rotation</button></li>
+      <li><button data-topic="angular-momentum">Angular Momentum</button></li>
+    </ul>
+  </main>
+
+</div>
+
+<div class="modal hidden" id="modal">
+  <div class="modal-content">
+    <button class="close-modal">×</button>
+    <div class="modal-body"></div>
+  </div>
+</div>
+
+<section class="hidden-content">
+
+  <div id="torque">
+    <h3>Torque</h3>
+    <p>
+      Torque is the rotational equivalent of force.
+      It determines how effectively a force can rotate an object about an axis.
+    </p>
+    <p>
+      Greater torque produces greater angular acceleration.
+    </p>
+  </div>
+
+  <div id="moment-inertia">
+    <h3>Moment of Inertia</h3>
+    <p>
+      Moment of inertia measures how resistant an object is to changes in rotational motion.
+    </p>
+    <p>
+      It depends on both the mass of the object and how that mass is distributed relative to the axis.
+    </p>
+  </div>
+
+  <div id="rotational-newton">
+    <h3>Newton’s Laws for Rotation</h3>
+    <p>
+      Newton’s laws apply to rotational motion when force is replaced by torque
+      and mass is replaced by moment of inertia.
+    </p>
+    <p>
+      These laws explain why heavier or wider objects are harder to rotate.
+    </p>
+  </div>
+
+  <div id="angular-momentum">
+    <h3>Angular Momentum</h3>
+    <p>
+      Angular momentum describes the rotational motion of a system.
+    </p>
+    <p>
+      In the absence of external torque, angular momentum remains conserved,
+      explaining phenomena like a spinning skater speeding up when pulling in their arms.
+    </p>
+  </div>
+
+</section>
+
+<script src="../js/global.js"></script>
+<script src="../js/modal.js"></script>
+
+</body>
+</html>

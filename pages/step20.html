@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 20 – Electrostatics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="../index.html" class="logo">Learn Physics</a>
+</header>
+
+<div class="page">
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Journey</h3>
+      <button id="toggle-sidebar">☰</button>
+    </div>
+    <ul id="sidebar-list"></ul>
+  </aside>
+
+  <main class="content">
+    <span class="step-label">STEP 20</span>
+    <h1>Electrostatics</h1>
+
+    <p class="summary">
+      Electrostatics studies electric charges at rest and the forces they exert.
+      It forms the foundation for understanding electricity, circuits, and electromagnetic fields.
+    </p>
+
+    <h2>Core Ideas</h2>
+
+    <ul class="subtopics">
+      <li><button data-topic="electric-charge">Electric Charge</button></li>
+      <li><button data-topic="coulomb">Coulomb’s Law</button></li>
+      <li><button data-topic="electric-field">Electric Field</button></li>
+      <li><button data-topic="field-lines">Electric Field Lines</button></li>
+      <li><button data-topic="dipole">Electric Dipole</button></li>
+      <li><button data-topic="gauss">Gauss’s Law</button></li>
+    </ul>
+  </main>
+
+</div>
+
+<div class="modal hidden" id="modal">
+  <div class="modal-content">
+    <button class="close-modal">×</button>
+    <div class="modal-body"></div>
+  </div>
+</div>
+
+<section class="hidden-content">
+
+  <div id="electric-charge">
+    <h3>Electric Charge</h3>
+    <p>
+      Electric charge is a fundamental property of matter responsible for electrical interactions.
+      Charges can be positive or negative, and like charges repel while unlike charges attract.
+    </p>
+    <p>
+      Charge is conserved and quantized, meaning it exists in discrete units.
+    </p>
+  </div>
+
+  <div id="coulomb">
+    <h3>Coulomb’s Law</h3>
+    <p>
+      Coulomb’s law describes the force between two stationary point charges.
+      The force depends on the product of charges and inversely on the square of distance.
+    </p>
+    <p>
+      It shows how electric force weakens with increasing separation.
+    </p>
+  </div>
+
+  <div id="electric-field">
+    <h3>Electric Field</h3>
+    <p>
+      The electric field represents the region around a charge where it exerts force on other charges.
+    </p>
+    <p>
+      It allows electric interactions to be described without direct contact.
+    </p>
+  </div>
+
+  <div id="field-lines">
+    <h3>Electric Field Lines</h3>
+    <p>
+      Electric field lines visualize the direction and strength of an electric field.
+    </p>
+    <p>
+      The density of lines indicates field strength, and lines never intersect.
+    </p>
+  </div>
+
+  <div id="dipole">
+    <h3>Electric Dipole</h3>
+    <p>
+      An electric dipole consists of two equal and opposite charges separated by a small distance.
+    </p>
+    <p>
+      Dipoles experience torque in external electric fields.
+    </p>
+  </div>
+
+  <div id="gauss">
+    <h3>Gauss’s Law</h3>
+    <p>
+      Gauss’s law relates electric flux through a closed surface to the charge enclosed.
+    </p>
+    <p>
+      It simplifies field calculations for highly symmetric charge distributions.
+    </p>
+  </div>
+
+</section>
+
+<script src="../js/global.js"></script>
+<script src="../js/modal.js"></script>
+
+</body>
+</html>

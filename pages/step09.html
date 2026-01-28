@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 09 – Linear Momentum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- styles -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="../index.html" class="logo">Learn Physics</a>
+  </header>
+
+  <!-- PAGE LAYOUT -->
+  <div class="page">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h3>Journey</h3>
+        <button id="toggle-sidebar">☰</button>
+      </div>
+      <ul id="sidebar-list"></ul>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="content">
+      <span class="step-label">STEP 09</span>
+      <h1>Linear Momentum</h1>
+
+      <p class="summary">
+        Momentum describes how difficult it is to stop a moving object.
+        It combines mass and velocity into a single quantity that plays a
+        central role in collisions and interactions between bodies.
+      </p>
+
+      <h2>Core Ideas</h2>
+
+      <ul class="subtopics">
+        <li><button data-topic="definition-momentum">Definition of Momentum</button></li>
+        <li><button data-topic="impulse">Impulse</button></li>
+        <li><button data-topic="conservation-momentum">Conservation of Momentum</button></li>
+        <li><button data-topic="collisions">Types of Collisions</button></li>
+      </ul>
+    </main>
+
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal hidden" id="modal">
+    <div class="modal-content">
+      <button class="close-modal">×</button>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- HIDDEN SUBTOPIC CONTENT -->
+  <section class="hidden-content">
+
+    <div id="definition-momentum">
+      <h3>Definition of Momentum</h3>
+      <p>
+        Linear momentum is defined as the product of an object's mass and velocity.
+        It is a vector quantity, meaning it has both magnitude and direction.
+      </p>
+      <p>
+        Objects with large mass or high velocity have greater momentum and are
+        harder to stop or redirect.
+      </p>
+    </div>
+
+    <div id="impulse">
+      <h3>Impulse</h3>
+      <p>
+        Impulse measures the effect of a force acting over a period of time.
+        It is equal to the change in momentum of an object.
+      </p>
+      <p>
+        This explains why extending the time of impact, such as using airbags,
+        reduces the force experienced during collisions.
+      </p>
+    </div>
+
+    <div id="conservation-momentum">
+      <h3>Conservation of Momentum</h3>
+      <p>
+        In an isolated system with no external forces, the total momentum remains constant.
+        Momentum can be transferred between objects, but the total does not change.
+      </p>
+      <p>
+        This principle governs everything from billiard ball collisions to rocket propulsion.
+      </p>
+    </div>
+
+    <div id="collisions">
+      <h3>Types of Collisions</h3>
+      <p>
+        Collisions can be elastic or inelastic depending on whether kinetic energy
+        is conserved.
+      </p>
+      <p>
+        Momentum is conserved in all collisions, but kinetic energy is only conserved
+        in perfectly elastic ones.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- JS -->
+  <script src="../js/global.js"></script>
+  <script src="../js/modal.js"></script>
+
+</body>
+</html>

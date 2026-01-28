@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Step 16 – Fluid Mechanics</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+
+<header class="header">
+  <a href="../index.html" class="logo">Learn Physics</a>
+</header>
+
+<div class="page">
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Journey</h3>
+      <button id="toggle-sidebar">☰</button>
+    </div>
+    <ul id="sidebar-list"></ul>
+  </aside>
+
+  <main class="content">
+    <span class="step-label">STEP 16</span>
+    <h1>Fluid Mechanics</h1>
+
+    <p class="summary">
+      Fluid mechanics studies the behavior of liquids and gases at rest and in motion.
+      Despite their ability to flow, fluids obey precise physical laws that explain
+      phenomena ranging from blood circulation to atmospheric motion.
+    </p>
+
+    <h2>Core Ideas</h2>
+
+    <ul class="subtopics">
+      <li><button data-topic="what-fluid">What is a Fluid?</button></li>
+      <li><button data-topic="pressure">Pressure in Fluids</button></li>
+      <li><button data-topic="buoyancy">Buoyancy & Archimedes’ Principle</button></li>
+      <li><button data-topic="fluid-statics">Fluid Statics</button></li>
+      <li><button data-topic="fluid-dynamics">Fluid Dynamics</button></li>
+      <li><button data-topic="continuity">Equation of Continuity</button></li>
+      <li><button data-topic="bernoulli">Bernoulli’s Principle</button></li>
+      <li><button data-topic="viscosity">Viscosity</button></li>
+    </ul>
+  </main>
+
+</div>
+
+<div class="modal hidden" id="modal">
+  <div class="modal-content">
+    <button class="close-modal">×</button>
+    <div class="modal-body"></div>
+  </div>
+</div>
+
+<section class="hidden-content">
+
+  <div id="what-fluid">
+    <h3>What is a Fluid?</h3>
+    <p>
+      A fluid is a substance that continuously deforms under applied stress.
+      Liquids and gases are both fluids, differing mainly in compressibility.
+    </p>
+    <p>
+      Fluids do not resist shear stress in the way solids do.
+    </p>
+  </div>
+
+  <div id="pressure">
+    <h3>Pressure in Fluids</h3>
+    <p>
+      Pressure is the force exerted per unit area by a fluid.
+      In fluids at rest, pressure acts equally in all directions.
+    </p>
+    <p>
+      Pressure increases with depth due to the weight of the fluid above.
+    </p>
+  </div>
+
+  <div id="buoyancy">
+    <h3>Buoyancy & Archimedes’ Principle</h3>
+    <p>
+      An object immersed in a fluid experiences an upward force called buoyant force.
+    </p>
+    <p>
+      This force equals the weight of the fluid displaced by the object.
+    </p>
+  </div>
+
+  <div id="fluid-statics">
+    <h3>Fluid Statics</h3>
+    <p>
+      Fluid statics deals with fluids at rest.
+      It explains pressure variation, hydraulic systems,
+      and forces on submerged surfaces.
+    </p>
+  </div>
+
+  <div id="fluid-dynamics">
+    <h3>Fluid Dynamics</h3>
+    <p>
+      Fluid dynamics studies fluids in motion.
+      It focuses on flow speed, streamlines, and energy conservation.
+    </p>
+  </div>
+
+  <div id="continuity">
+    <h3>Equation of Continuity</h3>
+    <p>
+      The continuity equation expresses conservation of mass in fluid flow.
+    </p>
+    <p>
+      When flow speed increases, cross-sectional area decreases, and vice versa.
+    </p>
+  </div>
+
+  <div id="bernoulli">
+    <h3>Bernoulli’s Principle</h3>
+    <p>
+      Bernoulli’s principle relates pressure, velocity, and height in flowing fluids.
+    </p>
+    <p>
+      Faster-moving fluids exert lower pressure.
+    </p>
+  </div>
+
+  <div id="viscosity">
+    <h3>Viscosity</h3>
+    <p>
+      Viscosity measures a fluid’s resistance to flow.
+      It represents internal friction between fluid layers.
+    </p>
+  </div>
+
+</section>
+
+<script src="../js/global.js"></script>
+<script src="../js/modal.js"></script>
+
+</body>
+</html>
